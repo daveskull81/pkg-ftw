@@ -1,3 +1,5 @@
-## Reveal Talk Starter
+## PKG FTW!
 
-This is my starter repo for building slides using [Reveal.js](https://revealjs.com/#/)
+Slides for a talk about [PKG](https://github.com/zeit/pkg) and using it to distribute simple apps to empower non-developers.
+
+Built using [Reveal.js](https://revealjs.com/#/)
