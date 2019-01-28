@@ -27,7 +27,131 @@
 				<section data-markdown>
 					<textarea data-template>
 						# PKG FTW!
-						Distributing custom code quickly to empower non-developers
+						Distributing custom code quickly to empower non-developers  
+
+						by  
+						`dAVE Inden`
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## A question for everyone
+						---
+						Raise your hand if anytime you mention you do something even remotely technical for a living to a  
+						non-technical person they ask you about fixing their wi-fi?
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### I had a problem 
+						---
+						I needed to give out a tool for others to use  
+						It needed to be:
+						* A native app rather than a hosted web app
+						* Easy to install
+						* Work on macOS & Windows
+						* Do a simple task (preferably, correctly)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Why did I have this problem?
+						---
+						#### Quick, to the backstory!
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						* Built a command line tool to make a single API request and format the output
+						* Wanted to give it out to others on my team (I'm helping!)
+						* Not everyone has the same experience working via a command line
+						* macOS and Windows users
+						* Hosting a web app for this one task would be ridiculous
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### The great research begins...
+						---
+						#### To the internet!
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						* Electron is a thing for native apps, but I didn't need a complex UI
+						* The app would maybe have an input field and a single button
+						* My original tool is a command line script
+						* If only I could just package that and give it out
+
+						That's when I found...
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# PKG!
+						---
+						###### (needlessly large text on a single slide FTW)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### What is this magical thing that is PKG?
+						---
+						* Describes itself as "Single-Command Node.js Binary Complier"
+						* Made by Zeit who make Next.js & Hyper & Now
+						* Takes a Node.js project and packages it up to be run on its own
+						* Everything, including the necessary Node.js binaries are included in the final compiled project
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### But, wait there's more!
+						---
+						* Single command to create the packages
+						* Can target specific Node.js versions, platforms, and architecures
+							* nodeRange node${n} or latest
+							* platform freebsd, linux, alpine, macos, win
+							* arch x64, x86, armv6, armv7
+						```
+						pkg index.js
+						```
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### All of my mistakes
+						---
+						#### At least, that I can remember
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						* Compiling a Windows app on a macOS machine?
+							* Maybe Wine did it? But, I don't really know
+						* ```json
+							"pkg": {
+								"scripts": "build/**/*.js",
+								"assets": "views/**/*"
+							}
+						```
+						* Too little specificity in command
+							* Errors from hidden files
+							* This is covered in the docs (oops)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Check it out!
+						```
+							https://github.com/zeit/pkg
+							https://www.npmjs.com/package/pkg
+							https://zeit.co/oss
+						```
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+
 					</textarea>
 				</section>
 				<section data-markdown>
@@ -36,8 +160,9 @@
 						I'm dAVE Inden  
 						Find me on the internets:  
 						Twitter: [@daveskull81](https://twitter.com/daveskull81)  
+						DEV Community: [dev.to/daveskull81](https://dev.to/daveskull81)  
 						Github: [github.com/daveskull81](https://github.com/daveskull81)  
-						Find these slides there 👆👆👆
+						Find these slides there 👆👆👆  
 					</textarea>
 				</section>
 			</div>
