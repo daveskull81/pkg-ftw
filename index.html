@@ -67,6 +67,7 @@
 						* Not everyone has the same experience working via a command line
 						* macOS and Windows users
 						* Hosting a web app for this one task would be ridiculous
+						* I don't want to run it for everyone
 					</textarea>
 				</section>
 				<section data-markdown>
@@ -81,6 +82,7 @@
 						* Electron is a thing for native apps, but I didn't need a complex UI
 						* The app would maybe have an input field and a single button
 						* My original tool is a command line script
+						* I could make it prompt for info to be easy to use
 						* If only I could just package that and give it out
 
 						That's when I found...
@@ -101,6 +103,7 @@
 						* Made by Zeit who make Next.js & Hyper & Now
 						* Takes a Node.js project and packages it up to be run on its own
 						* Everything, including the necessary Node.js binaries are included in the final compiled project
+						* Installation of your project is simple
 					</textarea>
 				</section>
 				<section data-markdown>
@@ -114,14 +117,26 @@
 							* arch x64, x86, armv6, armv7
 						```
 						pkg index.js
+						pkg index.js --targets node8-macos-x64,node6-win-x86
 						```
 					</textarea>
 				</section>
 				<section data-markdown>
 					<textarea data-template>
-						### All of my mistakes
+						### People actually use it!
 						---
-						#### At least, that I can remember
+						* I have received feedback on how it has helped people in their work
+						* I also got feedback on how to improve it
+						* The feedback was quickly implemented and I put a new version out
+							* No need to save data, folks can just download the new version
+						* Work has actually been faster, ZOMG!
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### All of the things I can remember I did wrong
+						---
+						#### To the mistakes!
 					</textarea>
 				</section>
 				<section data-markdown>
@@ -134,6 +149,13 @@
 								"assets": "views/**/*"
 							}
 						```
+						vs
+						```json
+							"pkg": {
+								"scripts": "",
+								"assets": [ "" ]
+							}
+						```
 						* Too little specificity in command
 							* Errors from hidden files
 							* This is covered in the docs (oops)
@@ -141,17 +163,14 @@
 				</section>
 				<section data-markdown>
 					<textarea data-template>
-						### Check it out!
+						### Can you think of something you could build?
+						---
+						#### Check it out!
 						```
 							https://github.com/zeit/pkg
 							https://www.npmjs.com/package/pkg
 							https://zeit.co/oss
 						```
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-
 					</textarea>
 				</section>
 				<section data-markdown>
